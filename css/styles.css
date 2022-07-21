@@ -131,6 +131,12 @@ ol, ul {
 .menu .link:hover, 
 .menu .link:focus {
     color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.menu .link::before:hover,
+.menu .link::before:focus {
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .menu .active-list {
@@ -282,6 +288,25 @@ ol, ul {
 
 .work-list .item:not(:last-child) {
     margin-right: 30px;
+}
+
+.work-list .item {
+    position: relative;
+}
+
+.work-list-text {
+    position: absolute;
+    bottom: 0px;
+    width: 370px;
+    padding: 27px 0;
+    background: rgba(47, 48, 58, 0.8);
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: var(--primary-white-color);
 }
 
 /* ============== /section чем мы занимаемсяа =============== */
